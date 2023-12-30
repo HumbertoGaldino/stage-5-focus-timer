@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
+<html lang="pt-br" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Temporizador estilo pomodoro.">
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- defer para ler primeiro o html e depois executar o script -->
+    <script type="module" src="src/main.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
@@ -14,7 +17,7 @@
 <body>
     <div id="app">
         <button id="toggle-mode">
-            <span class="sr-only">Ativa/Desativa Dark Mode</span>
+            <span class="sr-only">Ativa Light Mode!</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
