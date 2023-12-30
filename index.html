@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 <body>
     <div id="app">
         <button id="toggle-mode">
-            <span>Ativa/Desativa Dark Mode</span>
+            <span class="sr-only">Ativa/Desativa Dark Mode</span>
             <i class="ph-bold ph-sun"></i>
             <i class="ph-bold ph-moon"></i>
         </button>
@@ -26,12 +26,24 @@
         </section>
 
         <section id="controls" class="flex">
-            <button class="ph ph-play-circle"></button>
-            <button class="ph ph-pause-circle"></button>
-            <button class="ph ph-timer secondary"></button>
-            <button class="ph ph-stop-circle secondary"></button>
-            <button class="ph ph-speaker-none secondary"></button>
-            <button class="ph ph-speaker-high"></button>
+            <button class="ph ph-play-circle">
+                <span class="sr-only">Iniciar Contador</span>
+            </button>
+            <button class="ph ph-pause-circle">
+                <span class="sr-only">Pausar Contador</span>
+            </button>
+            <button class="ph ph-timer secondary">
+                <span class="sr-only">Ajustar Contador</span>
+            </button>
+            <button class="ph ph-stop-circle secondary">
+                <span class="sr-only">Reiniciar Contador</span>
+            </button>
+            <button class="ph ph-speaker-none secondary">
+                <span class="sr-only">Iniciar Música</span>
+            </button>
+            <button class="ph ph-speaker-high">
+                <span class="sr-only">Parar Música</span>
+            </button>
         </section>
     </div>
 </body>
