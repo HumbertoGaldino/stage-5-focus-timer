@@ -18,4 +18,8 @@ export function setMinutes(){
     elements.minutes.addEventListener('focus', () => {
         elements.minutes.textContent = ""
     })
+
+    // embora esteja riscado por estar deprecated, a estratégia ainda funciona
+    // o código abaixo permitirá que sejam digitados apenas números na aplicação
+    elements.minutes.onkeypress = (event) => /\d/.test(event.key)
 }
