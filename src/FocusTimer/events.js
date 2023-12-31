@@ -1,5 +1,6 @@
 import { controls } from "./elements.js";
 import * as actions from "./actions.js";
+import * as elements from "./elements.js"
 
 export function registerControls() {
     controls.addEventListener('click', (event) => {
@@ -10,5 +11,11 @@ export function registerControls() {
         }
 
         actions[action]();
+    })
+}
+
+export function setMinutes(){
+    elements.minutes.addEventListener('focus', () => {
+        elements.minutes.textContent = ""
     })
 }
